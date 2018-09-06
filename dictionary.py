@@ -18,5 +18,10 @@ for p in req["pessoas"]:
 pessoas = [{"nome": "Maria","sexo": "F"}, {"nome": "Jose","sexo": "M"}, {"nome": "Carlos","sexo": "M"}, {"nome": "Janaina","sexo": "F"}]
 
 for p in pessoas:
+    final = "o" if p["sexo"] == "M" else "a"
+    print("Prezad{} {}".format(final, p["nome"]))    
+
+for p in pessoas:
     print("Prezad{} {}".format("o" if p["sexo"] == "M" else "a", p["nome"]))    
+
     
